@@ -10,6 +10,3 @@
 The rest of this is just instructions for setting up Sunshine and Moonlight. I'll give cliff notes below but you should check the respective documentations.
 
 - Once you have the server running, you can go to your client computer, run moonlight, and the Deck should show up as a device you can connect to. Click it and it'll give you a pin. In a browser go to `https://<Deck's IP>:47990`, go through the one time setup of making a username and password (remember this as changing it later will require you to venture out into the terminal lands), login, click on "Pin", and enter the pin moonlight gave you. You should now be able to connect.
-
-# Additional Notes
-Sunshine + Moonlight should be called Moonshine
