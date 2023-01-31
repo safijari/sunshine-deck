@@ -1,6 +1,6 @@
 # Instructions
 - Download the sunshine-deck.tar.gz from releases
-- Extract it somewhere on your Deck. I just put it in home so it looks like `/home/deck/sunshine-deck`
+- Extract it somewhere under your Deck's home directory (SteamOS updates can remove files that are above this level). I just put it in home so it looks like `/home/deck/sunshine-deck`
 - In a terminal, go to this folder and run `./first_time_setup.sh`. You'll need to enter your root password (i.e. you'll need a root password). Make sure this does not error out. Successful runs of this should produce no output.
 - Now in that same folder try doing `./run.sh`. If you're in gamemode and running a terminal (or ssh-ed in while in gamemode) you should see a line that says "Screencasting with KMS" followed by "Found monitor for DRM screencasting".
 - To launch this from gamemode you can set up a non-steam shortcut like in the picture below. Just make sure you set the "Start In" value as wherever the `run.sh` file is.
