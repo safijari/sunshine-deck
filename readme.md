@@ -28,6 +28,9 @@ The rest of this is just instructions for setting up Sunshine and Moonlight. I'l
 
 # Build Instructions for the Cool People Reading This
 - Use rwfus or steamos-devmode (just use rwfus)
-- If using rwfus, once you have the overlay active run [this](https://gist.github.com/safijari/69a1a6fbfc1d2aef7cb41884c7d99fc6)
-- `git clone https://aur.archlinux.org/sunshine-git.git` somewhere
-- 
+- If using rwfus, once you have the overlay active run [this](https://gist.github.com/safijari/69a1a6fbfc1d2aef7cb41884c7d99fc6), you don't need all these things but whatevs
+- `git clone https://aur.archlinux.org/sunshine.git` somewhere, go into the `sunshine` folder just created
+- `makepkg --syncdeps --noconfirm`, this will take some time
+- inside this folder is pkg and inside it is the sunshine directory, rename it to sunshine-deck
+- copy the first_time_setup.sh and run.sh scripts inside this folder, you may have to make some changes here (e.g. the old build used to have sunshine at ./usr/local/bin/sunshine and the new build had it at ./usr/bin/sunshine
+- now you can tar it up by running `tar -czf sunshine-deck.tar.gz sunshine-deck/`
