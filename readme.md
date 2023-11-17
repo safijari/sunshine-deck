@@ -25,3 +25,9 @@ Then run:
 The rest of this is just instructions for setting up Sunshine and Moonlight. I'll give cliff notes below but you should check the respective documentations.
 
 - Once you have the server running, you can go to your client computer, run moonlight, and the Deck should show up as a device you can connect to. Click it and it'll give you a pin. In a browser go to `https://<Deck's IP>:47990`, go through the one time setup of making a username and password (remember this as changing it later will require you to venture out into the terminal lands), login, click on "Pin", and enter the pin moonlight gave you. You should now be able to connect.
+
+# Build Instructions for the Cool People Reading This
+- Use rwfus or steamos-devmode (just use rwfus)
+- If using rwfus, once you have the overlay active run [this](https://gist.github.com/safijari/69a1a6fbfc1d2aef7cb41884c7d99fc6)
+- `git clone https://aur.archlinux.org/sunshine-git.git` somewhere
+- 
