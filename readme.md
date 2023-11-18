@@ -30,10 +30,12 @@ The rest of this is just instructions for setting up Sunshine and Moonlight. I'l
 - Use rwfus or steamos-devmode (just use rwfus)
 - If using rwfus, once you have the overlay active run [this](https://gist.github.com/safijari/69a1a6fbfc1d2aef7cb41884c7d99fc6), you don't need all these things but whatevs
 - `git clone https://aur.archlinux.org/sunshine.git` somewhere, go into the `sunshine` folder just created
+- We need to edit the PKGBUILD. Get rid of the `libayatana-appindicator` dep and add `-D SUNSHINE_REQUIRE_TRAY=0` at the end of the cmake command
 - `makepkg --syncdeps --noconfirm`, this will take some time
 - inside this folder is pkg and inside it is the sunshine directory, rename it to sunshine-deck
 - copy the first_time_setup.sh and run.sh scripts inside this folder, take them from the previous version, you may have to make some changes here (e.g. the old build used to have sunshine at ./usr/local/bin/sunshine and the new build had it at ./usr/bin/sunshine
+- now you can tar it up by running `tar -czf sunshine-deck.tar.gz sunshine-deck/`
+# Ideas for fully self contained build?
 - go into the `./usr/bin` folder where the sunshine directory is and `mkdir vendored`
 - now run `ldd sunshine | awk 'NF == 4 { system("cp " $3 " vendored") }'` to copy over all dynamic libraries that sunshine relies on to the vendored folder
 - ??? change rpath ???
-- now you can tar it up by running `tar -czf sunshine-deck.tar.gz sunshine-deck/`
